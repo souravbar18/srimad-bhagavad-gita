@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://souravbar18.github.io/srimad-bhagavad-gita/sitemap.xml
