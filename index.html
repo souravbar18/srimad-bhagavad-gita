@@ -199,6 +199,78 @@ body{
     color: #ffcc66;
     margin: 0 10px;
 }
+.site-footer {
+    background-color: #1a1a24;
+    color: #e0e0e0;
+    padding: 30px 20px 15px;
+    font-family: system-ui, -apple-system, sans-serif;
+    border-top: 2px solid #333345;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-info h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.2rem;
+    color: #ff9800; /* Spiritual Gold/Orange tone */
+    font-weight: 600;
+}
+
+.footer-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #a0a0b0;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-links a {
+    color: #b3c5ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-links .divider {
+    color: #555566;
+    font-size: 0.8rem;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    padding-top: 15px;
+    border-top: 1px solid #2a2a3a;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777788;
+}
+
+/* Responsive view for mobile screens */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 /* ------------------------------------------- */
 /* EXTRA SAFETY FOR VERY SMALL PHONES */
@@ -314,12 +386,22 @@ body{
 <script src="script.js"></script>
 <div class="music-player">
     <audio id="bgMusic" src="harekrishna.mp3"></audio>
-    
 </div>
-<div style="text-align: center; margin-top: 50px; padding: 20px; background: #fff3e0; border-radius: 10px;">
-    <p style="color: #e4762a; font-weight: bold;">Thank You! "By the grace of the Supreme Lord, this website is now complete."</p>
-</div>
-<p style="text-align: center; margin-top: 50px; padding: 20px; border-radius: 10px;">© 2026 Shrimad Bhagavad Gita - Sanskrit , Bangla , English by Sourav</p>
-
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Srimad Bhagavad Gita</h3>
+            <p>A trilingual collection of sacred Gita verses, translations, and spiritual insights.</p>
+        </div>
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <span class="divider">•</span>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Srimad Bhagavad Gita. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
